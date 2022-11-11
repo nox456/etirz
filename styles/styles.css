@@ -30,7 +30,11 @@ header {
     padding: 40px;
     width: 100%;
 }
-.main-section {
+.main-section{
+    border: 5px solid #065520;
+    border-radius: 15px
+}
+.div-section {
     display: flex;
     justify-content: space-around;
     padding: 40px;
@@ -73,6 +77,13 @@ header {
 .nosotros:hover .article-container{
     background-size: 60%;
 }
+.estructura .article-container{
+    background-size: 60%;
+    background-image: url("/resources/images/estructura_fisica.png");
+}
+.estructura:hover .article-container{
+    background-size: 70%;
+}
 .article-content{
     height: 100%;
     display: flex;
@@ -84,9 +95,8 @@ header {
 .article-content div{
     display: flex;
     width: 100%;
-    justify-content: space-between; 
 }
-.article-content p{
+.article-content div p{
     margin: 0 10px;
     cursor: pointer;
     color: #fff;
@@ -99,7 +109,7 @@ header {
 }
 .article-content div{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .article-content:hover{
     background-color: #0006;
