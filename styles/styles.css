@@ -77,21 +77,21 @@ header {
     background-size: 100%;
     background-image: url("/resources/images/menciones.png");
 }
-.menciones:hover .article-container{
+.menciones .article-container:hover{
     background-size: 110%;
 }
 .nosotros .article-container{
     background-size: 50%;
     background-image: url("/resources/images/nosotros.png");
 }
-.nosotros:hover .article-container{
+.nosotros .article-container:hover{
     background-size: 60%;
 }
 .estructura .article-container{
     background-size: 60%;
     background-image: url("/resources/images/estructura_fisica.png");
 }
-.estructura:hover .article-container{
+.estructura .article-container:hover{
     background-size: 70%;
 }
 .article-content{
