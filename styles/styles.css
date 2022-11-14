@@ -64,6 +64,7 @@ main {
 .div-section {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 40px;
 }
 .main-resume {
@@ -85,6 +86,7 @@ main {
 .article-container {
     background-repeat: no-repeat;
     background-position: center;
+    margin: 20px 0;
     border-radius: 10px;
     width: 260px;
     height: 150px;
@@ -111,6 +113,20 @@ main {
 }
 .estructura .article-container:hover {
     background-size: 70%;
+}
+.servicios .article-container{
+    background-size: 50%;
+    background-image: url("/resources/images/public-service.png");
+}
+.servicios .article-container:hover{
+    background-size: 60%;
+}
+.galeria .article-container{
+    background-image: url("/resources/images/galeria.png");
+    background-size: 50%;
+}
+.galeria .article-container:hover{
+    background-size: 60%;
 }
 .article-content {
     height: 100%;
