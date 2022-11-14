@@ -17,41 +17,59 @@ body {
     justify-content: center;
     margin-bottom: 30px;
 }
+hr {
+    margin: 0 auto;
+    border-color: #065520;
+    width: 60%;
+}
 header {
     background-color: #065520;
     padding-bottom: 10px;
     color: #fff;
 }
+footer{
+    background-color: #065520;
+    padding: 30px;
+    color: #ccc;
+}
+.footer-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-direction{
+    width: 25%;
+    margin: 10px;
+}
+.footer-contacs{
+    margin: 10px;
+}
+.footer-title{
+    margin: 10px;
+    text-align: center;
+}
 .banner-img {
     width: 100px;
     margin: 0 15px;
 }
-.main-container {
+main {
     padding: 40px;
     width: 100%;
 }
-.main-section{
+.main-section {
     border: 5px solid #065520;
-    border-radius: 15px
+    border-radius: 15px;
+    background-color: #c2cdc5;
 }
 .div-section {
     display: flex;
     justify-content: space-around;
     padding: 40px;
-    background-color: #c2cdc5;
 }
-.div-section:nth-child(1){
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-.div-section:nth-child(2){
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.main-resume{
+.main-resume {
     width: 100%;
     height: 400px;
-    background-image:linear-gradient(to right,transparent 30%,#c2cdc5), url("/resources/images/entrada_principal.jpg");
+    background-image: linear-gradient(to right, transparent 30%, #c2cdc5), url("/resources/images/entrada_principal.jpg");
     background-repeat: no-repeat;
     background-position: -1px;
     background-size: 70%;
@@ -59,8 +77,8 @@ header {
     align-items: center;
     justify-content: flex-end;
 }
-.text-resume{
-    font-size: 25px;
+.text-resume {
+    font-size: 35px;
     font-weight: bold;
     width: 50%;
 }
@@ -71,42 +89,42 @@ header {
     width: 260px;
     height: 150px;
     box-shadow: 0 0 15px #000;
-    transition: all .2s;
+    transition: all 0.2s;
 }
-.menciones .article-container{
+.menciones .article-container {
     background-size: 100%;
     background-image: url("/resources/images/menciones.png");
 }
-.menciones .article-container:hover{
+.menciones .article-container:hover {
     background-size: 110%;
 }
-.nosotros .article-container{
+.nosotros .article-container {
     background-size: 50%;
     background-image: url("/resources/images/nosotros.png");
 }
-.nosotros .article-container:hover{
+.nosotros .article-container:hover {
     background-size: 60%;
 }
-.estructura .article-container{
+.estructura .article-container {
     background-size: 60%;
     background-image: url("/resources/images/estructura_fisica.png");
 }
-.estructura .article-container:hover{
+.estructura .article-container:hover {
     background-size: 70%;
 }
-.article-content{
+.article-content {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     border-radius: 10px;
-    transition: all .2s; 
+    transition: all 0.2s;
 }
-.article-content div{
+.article-content div {
     display: flex;
     width: 100%;
 }
-.article-content div p{
+.article-content div p {
     margin: 0 10px;
     cursor: pointer;
     color: #fff;
@@ -114,23 +132,23 @@ header {
     font-size: 17px;
     font-weight: bold;
     padding: 5px;
-    background-color: #0005; 
+    background-color: #0005;
     display: none;
 }
-.article-content div{
+.article-content div {
     display: flex;
     justify-content: center;
 }
-.article-content:hover{
+.article-content:hover {
     background-color: #0006;
 }
-.article-content:hover p{
+.article-content:hover p {
     display: block;
 }
-.article-content p:hover{
+.article-content p:hover {
     background-color: #0002;
 }
-.article-title{
+.article-title {
     text-align: center;
     margin-bottom: 15px;
 }
