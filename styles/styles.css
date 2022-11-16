@@ -74,25 +74,78 @@ main {
 }
 .div-section {
     display: flex;
+    padding: 40px;
+    width: 100%;
+}
+.div-section:nth-child(1){
+    align-items: center;
+}
+.div-section:nth-child(3){
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 40px;
 }
-.main-resume {
-    width: 100%;
-    height: 400px;
-    background-image: linear-gradient(to right, transparent 30%, #c2cdc5), url("/resources/images/entrada_principal.jpg");
-    background-repeat: no-repeat;
-    background-position: -1px;
-    background-size: 70%;
+.slider-container{
+    width: 800px;
+    overflow: hidden;
+}
+.img-container{
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    padding: 0;
+    width: 400%;
+    animation: slide 12s infinite alternate ease-in-out;
 }
-.text-resume {
-    font-size: 35px;
-    font-weight: bold;
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+.img-container div{
+    width: 800px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+}
+.background-gradient{
+    width: 800px;
+    position: absolute;
+    height: 400px;
+    z-index: 4;
+    background-image: linear-gradient(to right, transparent 50%, #c2cdc5);
+}
+.img-container div:nth-child(1){
+    background-image: url("/resources/images/slider_principal_1.jpg");
+}
+.img-container div:nth-child(2){
+    background-image: url("/resources/images/slider_principal_2.jpg");
+}
+.img-container div:nth-child(3){
+    background-image: url("/resources/images/slider_principal_3.jpg");
+}
+.img-container div:nth-child(4){
+    background-image:  url("/resources/images/slider_principal_4.jpg");
+}
+.text-resume{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 400px;
+    width: 80%;
+    z-index: 5;
+}
+.text-resume p{
+    font-size: 30px;
     width: 50%;
+    font-weight: bold;
 }
 .article-container {
     background-repeat: no-repeat;
