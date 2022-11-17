@@ -64,10 +64,13 @@ footer{
     text-align: center;
 }
 main {
+    display: flex;
     padding: 40px;
     width: 100%;
 }
 .main-section {
+    width: 75%;
+    margin-right: 10px;
     border: 5px solid var(--color);
     border-radius: 15px;
     background-color: #c2cdc5;
@@ -77,10 +80,10 @@ main {
     padding: 40px;
     width: 100%;
 }
-.div-section:nth-child(1){
+.div-section.slider-effect{
     align-items: center;
 }
-.div-section:nth-child(3){
+.div-section.sections{
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -231,4 +234,12 @@ main {
 .article-title {
     text-align: center;
     margin-bottom: 15px;
+}
+.side-bar{
+    margin-left: 10px;
+    width: 25%;
+    padding: 20px;
+    border: 5px solid var(--color);
+    border-radius: 15px;
+    background-color: #c2cdc5;
 }
