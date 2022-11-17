@@ -16,16 +16,16 @@ body {
 }
 header {
     width: 100%;
-    height: 200px;
     background-image: url("/resources/images/banner.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: 0 5px 10px #000;
+    box-shadow: 0 0 15px #000;
 }
 .banner-div{
     height: 100%;
     display: flex;
+    padding: 20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -67,13 +67,16 @@ main {
     display: flex;
     padding: 40px;
     width: 100%;
+    margin-top: 10px;
 }
 .main-section {
-    width: 75%;
     margin-right: 10px;
     border: 5px solid var(--color);
     border-radius: 15px;
     background-color: #c2cdc5;
+}
+.main-section.side{
+    width: 75%;
 }
 .div-section {
     display: flex;
@@ -90,6 +93,76 @@ main {
 .slider-container{
     width: 800px;
     overflow: hidden;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #000;
+}
+.nav-bar {
+    width: 100%;
+    height: 70px;
+    background-color: var(--color);
+    padding: 0 20px;
+}
+.menu {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+.menu > ul{
+    height: 100%;
+    display: flex;
+}
+.menu > ul > li {
+    height: 100%;
+    position: relative;
+}
+.menu > ul > li > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 14px;
+    transition: all 300ms ease;
+    align-items: centeR;
+}
+.menu > ul > li > a:hover {
+    background-color: #289942;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.menu ul li ul {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    position: absolute;
+    top: 90px;
+    left: -5px; 
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: all 300ms ease;
+}
+.menu ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+.menu ul li ul li a{
+    display: block;
+    color: #065520;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    transition: all 300ms ease;
+}
+.menu ul li ul li a:hover{
+    background-color: #289942;
+    color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .img-container{
     display: flex;
