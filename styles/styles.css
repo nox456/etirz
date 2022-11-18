@@ -7,6 +7,10 @@
 :root {
     --color: #067720;
 }
+html {
+    width: 100vw;
+    height: 100vh;
+}
 a {
     text-decoration: none;
     color: #fff;
@@ -16,7 +20,8 @@ body {
 }
 header {
     width: 100%;
-    height: 200px;
+    height: 20%;
+    padding: 2%;
     background-image: url("/resources/images/banner.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -31,11 +36,12 @@ header {
     justify-content: center;
 }
 .banner-title{
+    font-size: 150%; 
     text-align: center;
     color: #065520;
 }
 .banner-img{
-    width: 80px;
+    width: 5%;
 }
 hr {
     margin: 0 auto;
@@ -44,7 +50,7 @@ hr {
 }
 footer{
     background-color: var(--color);
-    padding: 30px;
+    padding: 2%;
     color: #ccc;
 }
 .footer-div{
@@ -64,17 +70,17 @@ footer{
     text-align: center;
 }
 main {
-    padding: 40px;
+    padding: 3%;
     width: 100%;
 }
 .main-section {
-    border: 5px solid var(--color);
+    border: 5px solid var(--color); 
     border-radius: 15px;
     background-color: #c2cdc5;
 }
 .div-section {
     display: flex;
-    padding: 40px;
+    padding: 3%;
     width: 100%;
 }
 .div-section:nth-child(1){
@@ -85,7 +91,7 @@ main {
     flex-wrap: wrap;
 }
 .slider-container{
-    width: 800px;
+    width: 42em; 
     overflow: hidden;
 }
 .img-container{
@@ -108,16 +114,16 @@ main {
     100% {margin-left: -300%;}
 }
 .img-container div{
-    width: 800px;
-    height: 400px;
+    width: 42em;
+    height: 21em;
     background-size: cover;
     background-position: center;
     z-index: 3;
 }
 .background-gradient{
-    width: 800px;
+    width: 42em;
     position: absolute;
-    height: 400px;
+    height: 21em;
     z-index: 4;
     background-image: linear-gradient(to right, transparent 30%, #c2cdc5);
 }
@@ -138,12 +144,12 @@ main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 400px;
+    height: 21em;
     width: 80%;
     z-index: 5;
 }
 .text-resume p{
-    font-size: 30px;
+    font-size: 120%;
     width: 50%;
     font-weight: bold;
 }
@@ -152,8 +158,8 @@ main {
     background-position: center;
     margin: 20px 10px;
     border-radius: 10px;
-    width: 260px;
-    height: 150px;
+    width: 14em;
+    height: 7em;
     box-shadow: 0 0 15px #000;
     transition: all 0.2s;
 }
@@ -209,9 +215,9 @@ main {
     cursor: pointer;
     color: #fff;
     border-radius: 5px;
-    font-size: 17px;
+    font-size: 80%;
     font-weight: bold;
-    padding: 5px;
+    padding: 2%;
     background-color: #0005;
     display: none;
 }
@@ -229,6 +235,7 @@ main {
     background-color: #0002;
 }
 .article-title {
+    font-size: 150%;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 15%;
 }
