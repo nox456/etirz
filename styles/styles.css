@@ -82,9 +82,9 @@ main {
     margin-top: 10px;
 }
 .main-section {
-    margin-right: 10px;
     border: 5px solid var(--color);
     border-radius: 15px;
+    width: 100vw;
     background-color: #c2cdc5;
 }
 .main-section.side{
@@ -95,9 +95,6 @@ main {
     justify-content: center;
     padding: 3%;
     width: 100%;
-}
-.div-section.index{
-    width: 100vw;
 }
 .div-section:nth-child(1) {
     align-items: center;
@@ -342,7 +339,7 @@ a {
     text-align: center;
     margin-bottom: 15%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     :root {
         --title: 90%;
         --title-article: 170%;
