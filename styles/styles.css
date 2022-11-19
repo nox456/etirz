@@ -257,7 +257,7 @@ a {
 }
 .servicios .article-container{
     background-size: 50%;
-    background-image: url("/resources/images/public-service.png");
+    background-image: url("/resources/images/servicios.png");
 }
 .servicios .article-container:hover{
     background-size: 60%;
@@ -320,45 +320,6 @@ a {
 .content-section {
     width: 100%;
 }
-.img-content{
-    width: 25em;
-    float: left;
-    margin: 0px 15px;
-}
-.img-content-container{
-    display: flex;
-    width: 25em;
-    justify-content: center;
-    height: 15em;
-    background-image: url("/resources/images/salon_mecanica.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 15px;
-    align-items: flex-end;
-    border: 3px solid;
-    float: left;
-    transition: all 200ms ease;
-}
-.img-description{
-    position: absolute;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.2em;
-    color: transparent;
-    transition: all 200ms ease;
-}
-.img-content-container:hover .img-description{
-    color: #FFF;
-}
-.img-content-container:hover{
-    background-image: linear-gradient(to bottom, transparent,#000), url("/resources/images/salon_mecanica.jpg");
-}
-.img-description p {
-    text-align: center;
-    margin: 0 auto;
-    width: 50%;
-}
 .text-section,.list-section{
     font-size: 1.5em;
     line-height: 1.3em;
@@ -373,4 +334,10 @@ p {
     text-align: center;
     margin-bottom: 30px;
     font-size: 2.5em;
+}
+.img-content {
+    width: 50%;
+    margin-right: 3%;
+    float: left;
+    border-radius: 7%;
 }
