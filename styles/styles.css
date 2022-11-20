@@ -66,9 +66,11 @@ footer {
 .footer-direction {
     width: 25%;
     margin: 10px;
+    font-size: .7em;
 }
 .footer-contacs {
     margin: 10px;
+    font-size: .7em;
 }
 .footer-title {
     margin: 10px;
@@ -115,7 +117,7 @@ a {
 }
 .nav-bar {
     width: 100%;
-    height: 70px;
+    height: 50px;
     background-color: var(--color);
     padding: 0 20px;
 }
@@ -133,6 +135,7 @@ a {
     position: relative;
 }
 .menu > ul > li > a {
+    font-size: .9em;
     width: 100%;
     height: 100%;
     display: flex;
@@ -151,8 +154,9 @@ a {
     flex-direction: column;
     background-color: #FFF;
     position: absolute;
-    top: 90px;
+    top: 70px; 
     left: -5px; 
+    font-size: .9em;
     padding: 14px 0px;
     visibility: hidden;
     opacity: 0;
@@ -163,7 +167,7 @@ a {
 .menu ul li:hover ul {
     visibility: visible;
     opacity: 1;
-    top: 70px;
+    top: 50px;
 }
 .menu ul li ul li a{
     display: block;
@@ -171,6 +175,7 @@ a {
     padding: 6px;
     padding-left: 14px;
     margin-top: 10px;
+    font-size: .9em;
     transition: all 300ms ease;
 }
 .menu ul li ul li a:hover{
@@ -339,6 +344,53 @@ a {
     text-align: center;
     margin-bottom: 15%;
 }
+.menu-icon{
+    width: 70%;
+    height: 100%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+}
+#check-menu{
+    display: none;
+}
+#label-check{
+    width: 10%;
+    height: 100%;
+    display: none;
+}
+.side-bar{
+    margin-left: 10px;
+    width: 25%;
+    padding: 20px;
+    border: 5px solid var(--color);
+    border-radius: 15px;
+    background-color: #c2cdc5;
+}
+.content-section {
+    width: 100%;
+}
+.text-section,.list-section{
+    font-size: 1em;
+    line-height: 1.3em;
+}
+.list-section p{
+    margin: 10px 0;
+}
+p {
+    text-align: justify;
+}
+.title-section{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: var(--title);
+}
+.img-content {
+    width: 50%;
+    margin-right: 3%;
+    float: left;
+    border-radius: 7%;
+}
 @media screen and (max-width: 650px) {
     :root {
         --title: 90%;
@@ -413,6 +465,12 @@ a {
         align-items: center;
         border-radius: 0;
     }
+    .main-section.side{
+        width: 100vw;
+    }
+    .side-bar{
+        display: none;
+    }
     .div-section {
         padding: 0;
         padding-top: 3%;
@@ -425,36 +483,35 @@ a {
     .footer-title {
         font-size: 0.7em;
     }
+    .menu > ul{
+        flex-direction: column;
+        background-color: #065520;
+        position: fixed;
+        left: 0;
+        top: 137px;
+        width: 100vw;
+        height: 0;
+        transition: all 300ms ease;
+        z-index: 50;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu ul li ul {
+        left: 90px;
+    }
+    .menu ul li:hover ul {
+        top: 50px;
+    }
+    .menu-icon{
+        display: flex;
+    }
+    #label-check{
+        display: block;
+    }
+    #check-menu:checked ~ .menu > ul {
+        height: 300px;
+        opacity: 1;
+        visibility: visible;
+    }
 }
-.side-bar{
-    margin-left: 10px;
-    width: 25%;
-    padding: 20px;
-    border: 5px solid var(--color);
-    border-radius: 15px;
-    background-color: #c2cdc5;
-}
-.content-section {
-    width: 100%;
-}
-.text-section,.list-section{
-    font-size: 1.5em;
-    line-height: 1.3em;
-}
-.list-section p{
-    margin: 10px 0;
-}
-p {
-    text-align: justify;
-}
-.title-section{
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2.5em;
-}
-.img-content {
-    width: 50%;
-    margin-right: 3%;
-    float: left;
-    border-radius: 7%;
-}
+/* **** */
