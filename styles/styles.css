@@ -471,7 +471,7 @@ p {
     .side-bar{
         display: none;
     }
-    .div-section {
+    .div-section{
         padding: 0;
         padding-top: 3%;
         padding-bottom: 3%;
@@ -486,9 +486,9 @@ p {
     .menu > ul{
         flex-direction: column;
         background-color: #065520;
-        position: fixed;
+        position: absolute;
         left: 0;
-        top: 137px;
+        top: inherit;
         width: 100vw;
         height: 0;
         transition: all 300ms ease;
