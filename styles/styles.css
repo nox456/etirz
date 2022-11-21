@@ -58,24 +58,6 @@ footer {
     padding: 2%;
     color: #ccc;
 }
-.footer-div {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.footer-direction {
-    width: 25%;
-    margin: 10px;
-    font-size: 0.9em;
-}
-.footer-contacs {
-    margin: 10px;
-    font-size: 0.9em;
-}
-.footer-title {
-    margin: 10px;
-    text-align: center;
-}
 main {
     padding: 3%;
     display: flex;
@@ -345,6 +327,36 @@ a {
     text-align: center;
     margin-bottom: 15%;
 }
+.footer-icon{
+    width: 1em;
+    margin: 0 .5em;
+}
+.footer-title{
+    margin: 1em 0;
+    transition: all 300ms ease;
+    border-bottom: 4px solid transparent;
+}
+.footer-container > div:hover > .footer-title{
+    border-color: #065520;
+}
+.footer-element{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: .7em 0;
+}
+.column1{
+    width: 50%;
+}
+.column3 ul .footer-element{
+    align-items: flex-start;
+}
+.footer-container{
+    font-size: .9em;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
 .menu-icon {
     width: 60%;
     height: 100%;
@@ -436,6 +448,21 @@ p {
     .galeria .article-container {
         background-size: 40%;
     }
+    .menciones .article-container:hover{
+        background-size: 80%;
+    }
+    .nosotros .article-container:hover {
+        background-size: 40%;
+    }
+    .estructura .article-container:hover {
+        background-size: 40%;
+    }
+    .servicios .article-container:hover {
+        background-size: 40%;
+    }
+    .galeria .article-container:hover {
+        background-size: 40%;
+    }
     .div-section:nth-child(3) {
         flex-direction: column;
         justify-content: center;
@@ -459,6 +486,9 @@ p {
     }
     .div-section.index {
         padding: 0;
+    }
+    .footer-container{
+        flex-direction: column;
     }
     hr {
         margin: 1em 0;
@@ -484,13 +514,6 @@ p {
     }
     .side-bar {
         display: none;
-    }
-    .footer-direction p,
-    .footer-contacs p {
-        font-size: 0.9em;
-    }
-    .footer-title {
-        font-size: 0.9em;
     }
     .menu > ul {
         flex-direction: column;
