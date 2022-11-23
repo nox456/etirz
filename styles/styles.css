@@ -57,6 +57,7 @@ footer {
     background-color: var(--color);
     padding: 2%;
     color: #ccc;
+    box-shadow: 0px 0px 0.8em #000;
 }
 main {
     padding: 3%;
@@ -68,9 +69,9 @@ main {
 .main-section {
     border: 5px solid var(--color);
     border-radius: 15px;
-    box-shadow: 0px 0px 0.8em #000;
     width: 100vw;
     background-color: #c2cdc5;
+    box-shadow: 0px 0px 0.8em #000;
 }
 .main-section.side {
     width: 75%;
@@ -380,6 +381,7 @@ a {
     border: 5px solid var(--color);
     border-radius: 15px;
     background-color: #c2cdc5;
+    box-shadow: 0px 0px 0.8em #000;
 }
 .content-section {
     width: 100%;
@@ -403,12 +405,38 @@ p {
 .img-content{
     width: 100%;
     border-radius: 7%; 
+    border: 2px solid #000;
 }
 .content-section div{
     width: 50%;
     margin-right: 1.5em;
     float: left;
     margin-bottom: 1.5em;
+}
+.struc {
+    display: block;
+}
+.struc-div {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5em 0;
+}
+.struc-line{
+    width: 90%;
+}
+.struc-img{
+    width: 30%;
+    border-radius: .5em;
+    border: 2px solid #000;
+}
+.struc-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.struc-text p{
+    font-size: 1.2em; 
 }
 @media screen and (max-width: 700px) {
     :root {
@@ -502,6 +530,9 @@ p {
         padding: 0;
         margin: 0;
     }
+    .title-section{
+        margin: 1em 0;
+    }
     .main-section {
         border: 0;
         display: flex;
@@ -557,6 +588,17 @@ p {
     }
     .content-section {
         padding: 5%;
+    }
+    .struc-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .struc-img{
+        width: 40%;
+        margin-bottom: 1.8em;
+    }
+    .struc-line{
+        width: 100%; 
     }
 }
 /* **** */
