@@ -555,9 +555,6 @@ p {
     .main-section.side {
         width: 100vw;
     }
-    .side-bar {
-        display: none;
-    }
     .menu > ul {
         flex-direction: column;
         background-color: #065520;
