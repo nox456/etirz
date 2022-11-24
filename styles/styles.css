@@ -330,7 +330,7 @@ a {
     margin-bottom: 15%;
 }
 .footer-icon{
-    width: 1em;
+    width: 1.5em;
     margin: 0 .5em;
 }
 .footer-title{
@@ -346,6 +346,9 @@ a {
     flex-wrap: wrap;
     align-items: center;
     margin: .7em 0;
+}
+.footer-element p{
+    cursor: pointer;
 }
 .column1{
     width: 50%;
@@ -425,7 +428,7 @@ p {
     width: 90%;
 }
 .struc-img{
-    width: 30%;
+    width: 40%;
     border-radius: .5em;
     border: 2px solid #000;
 }
@@ -437,6 +440,10 @@ p {
 }
 .struc-text p{
     font-size: 1.2em; 
+}
+.map-container{
+    position: absolute;
+    display: none;
 }
 @media screen and (max-width: 700px) {
     :root {
