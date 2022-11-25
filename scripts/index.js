@@ -1,9 +1,13 @@
-const menu = document.getElementById("menu")
-const sub_menu = Array.from(document.getElementById("sub-menu").children)
+import tab_functions from "./tab_functions.js";
 
-sub_menu.forEach(e => {
+const menu = Array.from(document.getElementById("menu").children)
+menu.forEach(e => {
     const menu_element = e.children[0]
     if (document.title.includes(menu_element.textContent)) {
         menu_element.remove()
     }
 })
+
+if (document.title.includes("Galería")) {
+    tab_functions()
+}
