@@ -10,15 +10,15 @@ export default () => {
 
             struc.style.display = "none"
             we.style.display = "none"
-            tabs[1].style.backgroundColor = "#065520"
-            tabs[0].style.backgroundColor = "#065520"
+            tabs[1].style.backgroundColor = "#888"
+            tabs[0].style.backgroundColor = "#888"
 
             if (e.textContent == "Estructura") {
                 struc.style.display = "flex"
-                tabs[0].style.backgroundColor = "#289942"
+                tabs[0].style.backgroundColor = "#444"
             } else if (e.textContent == "Nosotros") {
                 we.style.display = "flex"
-                tabs[1].style.backgroundColor = "#289942"
+                tabs[1].style.backgroundColor = "#444"
             }
 
         })

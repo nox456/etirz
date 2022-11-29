@@ -448,11 +448,8 @@ p {
     display: flex;
     align-items: center;
     height: fit-content;
-    background-color: #065520;
-    border: 5px solid #000;
+    background-color: #888;
     border-bottom: 0;
-    border-top-left-radius: .8em;
-    border-top-right-radius: .8em;
 }
 .tab {
     color: #fff;
@@ -471,18 +468,14 @@ p {
 }
 .tabs-content {
     width: 100%;
-    background-color: #289942;
-    border: 5px solid #000;
     border-top: 0;
     padding: 3%;
-    border-bottom-left-radius: .8em;
-    border-bottom-right-radius: .8em;
 }
 .section-gallery {
     flex-direction: column;
 }
 .tab:first-child{
-    background-color: #289942;
+    background-color: #444;
 }
 .struc {
     display: flex;
