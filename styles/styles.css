@@ -562,6 +562,11 @@ p {
     background-color: #0005;
     width: fit-content;
 }
+.video-container{
+    display: block;
+    margin: 1.5em auto;
+    border-radius: 1em;
+}
 
 @media screen and (max-width: 700px) {
     :root {
@@ -737,6 +742,9 @@ p {
     }
     .img-icon{
         width: 1em;
+    }
+    .video-container{
+        width: 50%;
     }
 }
 /* **** */
