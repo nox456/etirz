@@ -516,7 +516,7 @@ p {
     align-items: center;
     transform: scale(0); 
 }
-.light-box > div > img{
+.light-box > div > img,.light-box > img{
     width: 75vw;
     max-height: 80vh;
     object-fit: cover;
