@@ -753,5 +753,8 @@ p {
     .img-icon{
         width: 1em;
     }
+    .cpy {
+        font-size: .7em;
+    }
 }
 /* **** */
