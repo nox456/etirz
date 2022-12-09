@@ -1,4 +1,5 @@
 import tab_functions from "./tab_functions.js";
+import gallery_functions from "./gallery_functions.js";
 
 const menu = Array.from(document.getElementById("menu").children)
 menu.forEach(e => {
@@ -10,4 +11,5 @@ menu.forEach(e => {
 
 if (document.title.includes("Galería")) {
     tab_functions()
+    gallery_functions()
 }
