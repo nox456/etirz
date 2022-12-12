@@ -244,6 +244,7 @@ a {
     font-weight: bold;
 }
 .article-container {
+    display: block;
     background-repeat: no-repeat;
     background-position: center;
     margin: 20px 10px;
@@ -300,9 +301,8 @@ a {
     display: flex;
     width: 100%;
 }
-.article-content div a {
+.article-content > div > p,.article-content > div > a { 
     margin: 0 10px;
-    cursor: pointer;
     color: #fff;
     border-radius: 5px;
     font-size: 80%;
@@ -318,7 +318,7 @@ a {
 .article-content:hover {
     background-color: #0006;
 }
-.article-content:hover a {
+.article-content:hover p,.article-content:hover a {
     display: block;
 }
 .article-content p:hover {
@@ -600,7 +600,7 @@ p {
     .background-gradient {
         border-radius: 12px;
     }
-    .article-container div a {
+    .article-container div p,.article-content div a {
         font-size: 55%;
         background-color: #000a;
         padding: 3%;
@@ -648,14 +648,17 @@ p {
         border-radius: 0;
         box-shadow: 0 0 0.5em #000;
     }
-    .background-gradient {
-        background-image: linear-gradient(to right, transparent 10%, #c2cdc5);
+    .backgroundºgradient {
+        background-image: linear-gradient(to right, transparent, #c2cdc5);
     }
     .text-resume {
         width: 80%;
     }
     .text-resume p {
         font-size: 90%;
+        /* padding: .5em;
+        background-color: #0606;
+        border-radius: .5em; */
     }
     .div-section.index {
         padding: 0;
